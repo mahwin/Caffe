@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Header() {
   return (
-    <header className="container flex flex-row p-2 justify-between">
+    <header className="container flex flex-row py-2 -mx-6 justify-between">
       <div>
         <Link href="/">
           <a className="btn btn-link">Caffe</a>
@@ -15,13 +15,12 @@ export default function Header() {
         <Link href="/order">
           <a className="btn btn-link">Order</a>
         </Link>
-
-        <a href="#none" className="btn btn-link">
-          Hiring!
-        </a>
-        <a href="#none" className="btn btn-link">
-          Contact us
-        </a>
+        <Link href="/hiring">
+          <a className="btn btn-link">Hiring</a>
+        </Link>
+        <Link href="/contact-us">
+          <a className="btn btn-link">Contact Us</a>
+        </Link>
       </div>
     </header>
   );
